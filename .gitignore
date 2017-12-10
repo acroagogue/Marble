@@ -1,13 +1,13 @@
 *.tar.gz
 
 *.exe
-src/bitcoin
-src/bitcoind
-src/bitcoin-cli
-src/bitcoin-tx
-src/test/test_bitcoin
-src/test/test_bitcoin_fuzzy
-src/qt/test/test_bitcoin-qt
+src/marble
+src/marbled
+src/marble-cli
+src/marble-tx
+src/test/test_marble
+src/test/test_marble_fuzzy
+src/qt/test/test_marble-qt
 
 # autoreconf
 Makefile.in
@@ -30,8 +30,8 @@ config.log
 config.status
 configure
 libtool
-src/config/bitcoin-config.h
-src/config/bitcoin-config.h.in
+src/config/marble-config.h
+src/config/marble-config.h.in
 src/config/stamp-h1
 share/setup.nsi
 share/qt/Info.plist
@@ -74,13 +74,13 @@ src/qt/test/moc*.cpp
 # Compilation and Qt preprocessor part
 *.qm
 Makefile
-bitcoin-qt
-Bitcoin-Qt.app
+marble-qt
+Marble-Qt.app
 background.tiff*
 
 # Unit-tests
 Makefile.test
-bitcoin-qt_test
+marble-qt_test
 
 # Resources cpp
 qrc_*.cpp
@@ -93,7 +93,7 @@ build
 *.gcno
 *.gcda
 /*.info
-test_bitcoin.coverage/
+test_marble.coverage/
 total.coverage/
 coverage_percent.txt
 
@@ -108,5 +108,5 @@ test/cache/*
 
 /doc/doxygen/
 
-libbitcoinconsensus.pc
+libmarbleconsensus.pc
 contrib/devtools/split-debug.sh
